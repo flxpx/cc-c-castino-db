@@ -10,7 +10,7 @@ Requires Docker CLI.
 - Run `docker compose down` to stop.
 - Alternatively, run `docker compose up` and stop with `CTRL+C`.
 
-## Test Connection with MySQL Workbench
+## How to connect with MySQL Workbench
 
 Connect to the database in MySQL Workbench by opening a connection to `localhost:3307` with the user `root` and the password `password`.
 
