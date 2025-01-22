@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: cc-c-castino
+    ports:
+      - "3307:3306" # Access MySQL database on localhost:3307
+    volumes:
+      - ./db-data:/var/lib/mysql
+    networks:
+      - cc-c-c-network
+
+networks:
+  cc-c-c-network:
