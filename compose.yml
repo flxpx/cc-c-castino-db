@@ -7,9 +7,12 @@ services:
     ports:
       - "3307:3306" # Access MySQL database on localhost:3307
     volumes:
-      - ./db-data:/var/lib/mysql
+      - mysql8.0-data:/var/lib/mysql
     networks:
       - cc-c-c-network
+
+volumes:
+  mysql8.0-data:
 
 networks:
   cc-c-c-network:
